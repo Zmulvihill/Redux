@@ -1,8 +1,8 @@
 //Use const for Action Types
 // change code below this line
-const LOGIN = 'LOGIN';
-const LOGOUT = 'LOGOUT';
-// change code above this line
+const LOGIN = 'LOGIN'
+const LOGOUT = 'LOGOUT'
+//change code above this line
 
 const defaultState = {
   authenticated: false
@@ -11,13 +11,11 @@ const defaultState = {
 const authReducer = (state = defaultState, action) => {
 
   switch (action.type) {
-
-    case LOGIN:
+    case LOGIN: 
       return {
         authenticated: true
       }
-
-    case LOGOUT:
+    case LOGOUT: 
       return {
         authenticated: false
       }
